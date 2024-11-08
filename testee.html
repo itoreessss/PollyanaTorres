@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollyana Torres - Empreendedora da Beleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.imgur.com/RSR9ILl.jpeg'); /* Substitua pelo URL da sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow: auto; /* Permite rolar a página */
+        }
+        header {
+            background-color: rgba(28, 175, 189, 0.8); /* Fundo semitransparente */
+            padding: 40px 20px;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            margin-bottom: 40px; /* Espaçamento para dar espaço entre o título e a imagem */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 20px; /* Espaçamento entre o título e a imagem */
+            border: 2px solid #1cafbd; /* Adiciona borda ao redor do título */
+            padding: 10px; /* Adiciona um pequeno espaço entre o texto e a borda */
+            border-radius: 10px; /* Borda arredondada */
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #fff;
+            margin: 10px 0;
+            border: 2px solid #1cafbd; /* Adiciona borda ao redor do subtítulo */
+            padding: 5px; /* Espaço interno da borda */
+            border-radius: 10px; /* Borda arredondada */
+        }
+        .message {
+            color: white;
+            font-size: 1.2em;
+            margin: 20px 0;
+            max-width: 600px;
+            line-height: 1.5;
+            padding: 0 20px;
+            border: 2px solid #1cafbd; /* Adiciona borda ao redor da mensagem */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px; /* Mais espaço interno */
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            gap: 10px;
+        }
+        .gallery img {
+            border-radius: 15px;
+            width: 100%; /* Faz com que as imagens se ajustem ao tamanho da tela */
+            max-width: 250px; /* Limita a largura das imagens para 250px */
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-button {
+            background-color: #1cafbd;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-button:hover {
+            background-color: #4682B4;
+            transform: scale(1.05);
+        }
+        
+        /* Media queries para dispositivos móveis */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em; /* Ajuste do título */
+            }
+            h2 {
+                font-size: 1.4em; /* Ajuste do subtítulo */
+            }
+            .message {
+                font-size: 1.1em; /* Ajuste do tamanho do texto da mensagem */
+                padding: 15px; /* Ajuste do padding */
+            }
+            .gallery img {
+                width: 100%; /* As imagens ocupam 100% da largura da tela */
+                max-width: 250px; /* Limita o tamanho das imagens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* Ajuste do título para telas muito pequenas */
+            }
+            h2 {
+                font-size: 1.3em; /* Ajuste do subtítulo para telas pequenas */
+            }
+            .message {
+                font-size: 1em; /* Ajuste do texto */
+                padding: 10px; /* Ajuste do padding */
+            }
+            .gallery img {
+                width: 100%; /* As imagens ficam 100% da largura em telas pequenas */
+                max-width: 200px; /* Limita as imagens a 200px em telas pequenas */
+            }
+            .whatsapp-button {
+                font-size: 1em; /* Ajuste do tamanho do botão */
+                width: 90%; /* Botão ocupa 90% da largura da tela */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pollyana Torres</h1>
+    <!-- A imagem agora tem 60% da largura da tela -->
+    <img src="https://i.imgur.com/pxJuV8q.jpeg" alt="Foto de Pollyana" style="width: 60%; border-radius: 15px;">
+    <h2>Empreendedora da Beleza</h2>
+</header>
+
+<section class="message">
+    <p>Através de muito estudo e dedicação, te ajudo a realçar a sua beleza natural! Para que você se sinta ainda mais linda e confiante!</p>
+</section>
+
+<section class="gallery">
+    <img src="https://i.imgur.com/LolzF3l.jpeg" alt="Trabalho de Pollyana">
+    <img src="https://i.imgur.com/rrxhQoa.jpeg" alt="Trabalho de Pollyana">
+    <img src="https://i.imgur.com/JrxdnYM.jpeg" alt="Trabalho de Pollyana">
+</section>
+
+<a href="https://wa.me/14998538205" class="whatsapp-button">Fale comigo no WhatsApp!</a>
+
+</body>
+</html>
